@@ -6,14 +6,12 @@ class LogisticRegression:
         self.n_iters = n_iters
         self.weights = None
         self.bias = None
-        #self.theta = None
     
     def fit(self, X, y):
         #Init paramtetes
-        n_samples, n_features = len(X)
+        n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
-        #self.theta = init_theta(X)
 
         #Gradient descent
         for i in range(self.n_iters):
@@ -27,7 +25,6 @@ class LogisticRegression:
             self.bias -= self.lr * db
 
             print(y_predicted)
-            #theta = self.weights + self.lr * gradient
     
     def predict(self, X):
             linear_model = np.dot(X, self.weights) + self.bias
