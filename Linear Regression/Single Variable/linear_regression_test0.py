@@ -6,7 +6,7 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split 
 from linear_regression import LinearRegression
 
-ds = pd.read_csv(r'C:\Users\matia\Desktop\ex1data1.csv')
+ds = pd.read_csv(r'C:\Users\matia\Desktop\GitHub\Machine-Learning-Standford-Course\Dataset CSV\ex1data1.csv')
 print(ds)
 
 X = ds.iloc[:,0]

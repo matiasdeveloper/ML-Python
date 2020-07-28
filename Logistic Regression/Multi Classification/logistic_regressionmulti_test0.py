@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import matplotlib.pyplot as plt
-from logistic_regression import LogisticRegression
+from logistic_regressionmulti import LogisticRegressionMulti
 from sklearn.preprocessing import MinMaxScaler
 from matplotlib.colors import ListedColormap
 

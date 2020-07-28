@@ -25,13 +25,13 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.1)
 
 #Plot data with matplot
 fig = plt.figure(figsize=(8,6))
-plt.scatter(X_train, y_train, color="b", marker="s", s = 20)
+plt.scatter(X_train, y_train, color="b", marker="s", s = 10)
 plt.xlabel('Xlabel')
 plt.ylabel('Ylabel')
 plt.show()
 
 #Execute Logistic Regression Model
-model = LogisticRegression(random_state=10, max_iter=400,tol=0.00001)
+model = LogisticRegression(random_state=0, max_iter=400,tol=0.001)
 model.fit(np.array(X_train).reshape(-1,1), y_train)
 
 y_pred = model.predict(np.array(X_test).reshape(-1,1))
