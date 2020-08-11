@@ -21,6 +21,6 @@ class NeuralNetwork():
     
     def think(self, inputs):
         inputs = inputs.astype(float)
-        output = self.sigmoid(np.dot(inputs, self.synaptics_weights))
+        output = self.sigmoid(np.dot(inputs, self.synaptics_weights) + 1)
 
         return output
