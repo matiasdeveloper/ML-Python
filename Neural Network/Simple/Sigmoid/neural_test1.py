@@ -22,7 +22,9 @@ while i < 5:
 
     print('New situation: input data = ', A,B,C)
     print('Output data: ')
-    print(neural_network.think(np.array([A,B,C])))
+    
+    e = neural_network.think(np.array([A,B,C]))
+    print(e)
 
     input("Press Enter to continue..")
     i+=1
